@@ -11,6 +11,6 @@
  
 -Another bug arose when it came to the implementation of the collapsibles. Initially all that would display was the button that when clicked would reveal the text that was "collapsed," in order to fix this I had to move the javascript function from being present within the external file to existing within an internal script tag within the HTML. The CSS also exists there, defined in the header for consistency.
 
--Also was able to get the site hosted using Github pages using this link:
+-Also was able to get the site hosted using Github pages using this link: https://bonjour-itws.github.io/lab2/
 
 -Getting the site hosted was initially problematic as while the website would work locally-including all external CSS and Javascript files-the files would fail to load when hosted by Github. After some forum research, I found that many people suggested to have the links to external files placed earlier/higher in the head tag. Upon doing this the external CSS and Javascript loaded which allowed for the page background to appear in addition to making the buttons that replace the text for the 10 amendments to work.
