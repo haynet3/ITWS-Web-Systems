@@ -13,7 +13,7 @@
    
     -Site hosted through Github Pages via this link: *https://bonjour-itws.github.io/lab2/*
 
--***My Contributions***
+-***My Contributions***:
 
 -Provided the initial index.html and CSS (Gave the page it's parchement background and formatted paragaphs to display with a given max width)
 
