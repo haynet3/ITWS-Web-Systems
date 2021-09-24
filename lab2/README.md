@@ -2,7 +2,7 @@
 
 -Provided the initial index.html and CSS (Gave the page it's parchement background and formatted paragaphs to display with a given max width)
 
--With help from W3 Schools, was able to create "Collapsibles" that displayed the Article summaries written by Divya
+-With help from W3 Schools, was able to create "Collapsibles" that displayed the Article summaries
 
 -Created original button function to execute Javascript function onclick (made the initial button used by the first amendment-group members added the others)
 
