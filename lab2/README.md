@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 2: Formatting and Styling the Constitution
 
 -Provided the initial index.html and CSS (Gave the page it's parchement background and formatted paragaphs to display with a given max width)
 
