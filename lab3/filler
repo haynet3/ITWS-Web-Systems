@@ -1,0 +1,35 @@
+            <h1>Graduate</h1>
+            <ul>
+              <li>Database Systems</li>
+              <li>Database Analytics</li>
+              <li>Software Design and Engineering</li>
+              <li>Management of Technology</li>
+              <li>Human Computer</li>
+            </ul>
+
+                        <h1>Undergraduate Major/Minor</h1>
+            <ul>
+              <li>Skill in core information technology and web science development methods</li>
+              <li>Foundation skill and knowledge in engineering and/or computer science core</li>
+              <li>Knowledge of the management concerns for the effective use of (especially web) technology</li>
+              <li>An ability to be creative and using well-developed problem solving skills</li>
+              <li>Communication, leadership skills and ability to work in teams</li>
+            </ul>
+
+                        <h1>Undergraduate Major/Minor</h1>
+                        <ul>
+                            <li>Skill in core information technology and web science development methods</li>
+                            <li>Foundation skill and knowledge in engineering and/or computer science core</li>
+                            <li>Knowledge of the management concerns for the effective use of (especially web) technology</li>
+                            <li>An ability to be creative and using well-developed problem solving skills</li>
+                            <li>Communication, leadership skills and ability to work in teams</li>
+                        </ul><svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <defs>
+                                <filter id="goo">
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo">
+                                    </feColorMatrix>
+                                    <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                </filter>
+                            </defs>
+                        </svg>
