@@ -27,7 +27,7 @@
  
 -Site is generally unstable in its current form, a single addition or removal could break it entirely
 
-=Site has a loading issue, the icon page at the bottom tends to need to "pop" in rather than loading in with the rest of the site as expected
+-Site has a loading issue, the icon page at the bottom tends to need to "pop" in rather than loading in with the rest of the site as expected
 
 -Ultimately attempting to string together a large amount of modified css from other soruces was a mistake and in the end:
 
