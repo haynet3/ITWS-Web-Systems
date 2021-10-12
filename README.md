@@ -1,2 +1,10 @@
-# ITWS-Web-Systems
-All the work for the ITWS Web Systems lives here.
+# GNH Lab
+-GNH Lab website
+
+
+-***Features***: 
+
+    -A footer with text created with AJAX
+  
+    -Bootstrap with Automated Mobile Design
+
