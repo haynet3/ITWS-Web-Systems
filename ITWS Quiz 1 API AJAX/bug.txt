@@ -1,0 +1,6 @@
+    $("#one").click(function (event) {
+        $.getJSON('latest.json', function (jd) {
+            $('#oneCol').html(latest[0].amount);
+            console.log("FUCK YOU");
+        });
+    });
