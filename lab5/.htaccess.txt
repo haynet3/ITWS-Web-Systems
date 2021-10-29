@@ -1,0 +1,22 @@
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  Header unset ETag
+  FileETag None
+
+
+  ExpiresActive on
+  ExpiresDefault "access plus 1 month"
+  ExpiresByType text/cache-manifest "access plus 0 seconds"
+  # Your document html
+  ExpiresByType text/html "access plus 0 seconds"
+  # CSS and JavaScript
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+
+# For Olders Browsers Which Cant Handle Compression
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
