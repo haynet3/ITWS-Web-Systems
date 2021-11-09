@@ -257,6 +257,7 @@ class Tangent extends Operation {
 <html>
 <head>
 <title>PHP Calculator</title>
+<h1>PHP Calculator</h1>
 </head>
 <body>
   <pre id="result">
@@ -297,7 +298,15 @@ class Tangent extends Operation {
     <input type="submit" name="cos" value="Cosine"/>
     <input type="submit" name="tan" value="Tangent"/>
   </form>
+  <br>
+  <br>
+  <div id="box">
+    <p>Instructions</p>
+  </div>
   <?php echo "<link rel='stylesheet' type='text/css' href='style.css' />"; ?>
+  <li>Place desired numeric values into boxes and then click a function button</li> 
+  <li>If function only requires one value, leave 2nd box blank</li>
+
 
 </body>
 </html>
