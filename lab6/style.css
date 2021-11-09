@@ -2,8 +2,14 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 225px;
+    padding-top: 220px;
+    background-image: url("https://i.pinimg.com/originals/26/b8/e0/26b8e0dbcb7ff0b7dd2e3840d807988d.jpg");
 }
 form {
     display: inline-block;
+}
+
+#box {
+    height: 100%;
+    border: solid red 2px;
 }
