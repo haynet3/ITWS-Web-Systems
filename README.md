@@ -1,10 +1,8 @@
-# GNH Lab
--GNH Lab website
+#ITWS
+-Project Repo
 
 
 -***Features***: 
 
-    -A footer with text created with AJAX
-  
-    -Bootstrap with Automated Mobile Design
+    -Labs
 
