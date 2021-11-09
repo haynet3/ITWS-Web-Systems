@@ -12,3 +12,5 @@
 
      -Initially struggled with getting PHP "accept"/recognize the style.css file provided, was fixed with an Echo statement and help from StackOverflow
      -Couldn't figure out implemnetation of background image to give the site a nicer look-PHP file wouldn't accept it
+     -Biggest struggle then was implementation of the styling upon the PHP File-might have been easier to have php code run from within an HTML File
+     -And then style the HTML File itself, saving the headache
