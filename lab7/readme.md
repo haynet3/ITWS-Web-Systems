@@ -169,5 +169,7 @@
 ***Improvements***
 
       -Page fluidity
-      -Did not get a chance to go back and add links connecting each page, or making it so that the PHP automatically went back to the info entry page on click 
+      -Did not get a chance to go back and add links connecting each page
+      -PHP Always shows "content inserted" and doesn't go back to info entry page
+      -As such user must manually backtrack through to the previous pages for all sites (simple fix)
 
