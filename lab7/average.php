@@ -18,25 +18,22 @@ if (!mysqli_select_db($con, $db)) {
     die("Uh oh, couldn't select database --> $db" . $con->connect_error . ' >');
 }
 
+$result = mysqli_query($con,"SELECT crn, avg(grade) from grades group by crn;");
 
-// get the post records
-$inputCRN = $_POST['inputCRN'];
-$inputRIN = $_POST['inputRIN'];
-$inputGrade = $_POST['inputGrade'];
+echo "<table border='1'>
+<tr>
+<th>CRN</th>
+<th>Grade</th>
+</tr>";
 
-// database insert SQL code
-$sql = "INSERT INTO `grades`(`id`,`crn`, `RIN`, `grade`) VALUES (NULL,'$inputCRN','$inputRIN','$inputGrade')";
-
-// insert in database 
-$rs = mysqli_query($con, $sql);
-
-if($rs)
+while($row = mysqli_fetch_array($result))
 {
-	echo "Contact Records Inserted";
+echo "<tr>";
+echo "<td>" . $row['crn'] . "</td>";
+echo "<td>" . $row['grade'] . "</td>";
+echo "</tr>";
 }
-else
-{
-    echo "Nope";
-}
+echo "</table>";
 
+mysqli_close($con);
 ?>

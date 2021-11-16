@@ -43,7 +43,7 @@ if($rs)
 }
 else
 {
-    echo "wtf";
+    echo "Nope";
 }
 
 ?>
