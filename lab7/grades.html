@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="student.css">
+    <title>Gradebook</title>
+</head>
+
+<body>
+    <h1>Gradebook</h1>
+    <h2>Adding Grades</h2>
+    <form method="post" action="grade.php">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputCity">CRN</label>
+                <input type="text" class="form-control" name="inputCRN">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">RIN</label>
+                <input type="text" class="form-control" name="inputRIN">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputZip">Grade</label>
+                <input type="text" class="form-control" name="inputGrade">
+            </div>
+        </div>
+        </div>
+        <div class="form-group">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Grade</button>
+    </form>
+
+
+</body>
+
+</html>

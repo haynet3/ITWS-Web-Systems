@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="student.css">
+    <title>Gradebook</title>
+</head>
+
+<body>
+    <h1>Gradebook</h1>
+    <h2>Adding Students</h2>
+    <form method="post" action="students.php">
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputCity">RIN</label>
+                <input type="text" class="form-control" name="inputRIN">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputCity">RCSID</label>
+                <input type="text" class="form-control" name="inputRCSID">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Name</label>
+                <input type="text" class="form-control" name="inputName">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Last Name</label>
+                <input type="text" class="form-control" name="inputLast">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Alias</label>
+                <input type="text" class="form-control" name="inputAlias">
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">Phone</label>
+                <input type="text" class="form-control" name="inputPhone">
+            </div>
+            </div>
+        <div class="form-row">
+            <div class="form-group col-md-2">
+                <label for="inputZip">Street</label>
+                <input type="text" class="form-control" name="inputStreet">
+            <div class="form-group col-bd-2">
+                <label for="inputZip">City</label>
+                <input type="text" class="form-control" name="inputCity">
+            </div>
+            <div class="form-group col-bd-2">
+                <label for="inputZip">State</label>
+                <input type="text" class="form-control" name="inputState">
+            </div>
+            <div class="form-group col-bd-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" name="inputZip">
+            </div>
+            </div>
+        </div>
+        <div class="form-group">
+        </div>
+        <button type="submit" class="btn btn-primary">Add Student</button>
+    </form>
+
+
+</body>
+
+</html>
