@@ -148,5 +148,12 @@
       To get average grade by course crn: select crn, avg(grade) from grades group by crn;
 
 
+***Lab Features***
+
+      -Database that features three tables: Students/Courses/Grades
+      -Website that allows user to insert a Student/Course/Grade into the database
+      -Wesbite uses bootstrap for form CSS
+
+
 
 
