@@ -162,4 +162,5 @@
       -Figuring out how to structure the site/form so that the data could be extracted from it proved to be tough as well
       -Challenges were overcome through the use of forms such as StackOverflow in addition to other depricated websites from earlier in the 2000s
       -In addition to that a significant amount of experimentation was performed, mix and matching commands to see which ones functioned as expected
+      -Wasn't able to figure out how to SELECT and display table data on the click of a button
 
