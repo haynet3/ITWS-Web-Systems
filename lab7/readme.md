@@ -1,7 +1,7 @@
 #Lab 7: Gradebook Database
 
 
-***Complete Step List/Every command used***
+***Complete Step List/Every Command Used***
 
       -Went to PHPMyAdmin Homepage-clicked "new"
 
