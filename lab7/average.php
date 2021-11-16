@@ -30,7 +30,7 @@ while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
 echo "<td>" . $row['crn'] . "</td>";
-echo "<td>" . $row['grade'] . "</td>";
+echo "<td>" . $row['avg(grade)'] . "</td>";
 echo "</tr>";
 }
 echo "</table>";
