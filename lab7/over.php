@@ -22,8 +22,13 @@ $result = mysqli_query($con,"SELECT DISTINCT students.RIN, students.name, studen
 
 echo "<table border='1'>
 <tr>
-<th>First name</th>
-<th>Last name</th>
+<th>RIN</th>
+<th>Name</th>
+<th>Last Name</th>
+<th>Street</th>
+<th>City</th>
+<th>State</th>
+<th>Zip</th>
 </tr>";
 
 while($row = mysqli_fetch_array($result))
