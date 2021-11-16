@@ -1,4 +1,4 @@
-#Lab 7 Gradebook Database
+#Lab 7: Gradebook Database
 
 
       -Testing
