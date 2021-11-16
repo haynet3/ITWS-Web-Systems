@@ -154,6 +154,8 @@
       -Website that allows user to insert a Student/Course/Grade into the database
       -Wesbite uses bootstrap for form CSS
       -Buttons that can sort the students/database data according to rules (listen on the button labels)
+      -Text file database dump
+      -SQL Database dump
 
 
 ***Lab Struggles***
