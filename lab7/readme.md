@@ -5,32 +5,32 @@
 
       -Went to PHPMyAdmin Homepage-clicked "new"
 
-      Named database websyslab7-clicked create
+      -Named database websyslab7-clicked create
 
-      Named table courses-hit go
+      -Named table courses-Hit Go
 
-      Filled out all columns according to lab instructions and set collation for each to utf8_mb4_general_ci and hit save
+      -Filled out all columns according to lab instructions and set collation for each to utf8_mb4_general_ci and hit save
 
-      checked box for "crn" and hit primary to set/add it as primary key
+      -Checked box for "crn" and hit primary to set/add it as primary key
 
-      clicked new under "websyslab7" in side panel to create new table
+      -Clicked new under "websyslab7" in side panel to create new table
 
-      named table students and filled out each column according to lab instructions and hit save
+      -Named table students and filled out each column according to lab instructions and hit save
 
-      checked box for RIN and clicked primary to set it as primary key
+      -Checked box for RIN and clicked primary to set it as primary key
 
-      clicked sql and used statements:
+      -Clicked sql and used statements:
 
       ALTER TABLE students ADD street VARCHAR(255);
       ALTER TABLE students ADD city varchar(255);
       ALTER TABLE students ADD state varchar(255);
       ALTER TABLE students ADD zip int(5);
 
-      and hit go which properly inserted the tables
+      -Hit Go to insert table 
 
-      clicked courses table on left-hand side panel
+      -Clicked courses table on left-hand side panel
 
-      clicked SQL
+      -Clicked SQL
 
       Wrote statements:
 
@@ -38,13 +38,13 @@
       ALTER TABLE courses ADD year int(4);
 
 
-      clicked Go and inserted the new columns
+      -Clicked Go and inserted the new columns
 
-      clicked websyslab7 on left-hand panel
+      -Clicked websyslab7 on left-hand panel
 
-      clicked SQL
+      -Clicked SQL
 
-      ran statements:
+      Ran statements:
 
       CREATE TABLE grades(
           id INT PRIMARY KEY AUTO_INCREMENT,
@@ -56,11 +56,11 @@
       );
 
 
-      clicked on courses table 
+      -Clicked on courses table 
 
-      clicked sql 
+      -Clicked SQL 
 
-      ran statement:
+      -Ran statement:
 
       INSERT INTO courses (crn, prefix, number, title, section, year)
       VALUES (61121, 'BMED', 2100 , 'Biomaterials Sci & Engineering', 01, 2022);
@@ -71,13 +71,13 @@
       INSERT INTO courses (crn, prefix, number, title, section, year)
       VALUES (63148, 'MGMT', 1260 , 'Business Law And Ethics', 02, 2022);
 
-      hit go and inserted values 
+      -Hit go and inserted values 
 
-      clicked students table
+      -Clicked students table
 
-      clicked sql 
+      -Clicked SQL 
 
-      ran statement:
+      -Ran statement:
 
       SELECT * FROM `students` WHERE 1;
       INSERT INTO students (RIN, RCSID, name, lastname, alias, phone, street, city, state, zip)
@@ -92,13 +92,15 @@
       VALUES (112354968, 'kassar8', 'Kassarenna' , 'Katwaroo', 'SO', 8756584590, '230-30 152nd Ave', 'Queens', 'NY', 11678);
 
 
-      hit go to insert values
+      -Hit go to insert values
 
-      clicked grades table 
+      -Clicked grades table 
 
-      clicked SQL
+      -Clicked SQL
 
-      ran statement:
+      Ran statement:
+      
+      
       SELECT * FROM `grades` WHERE 1;
       INSERT INTO grades (id, crn, RIN, grade)
       VALUES (DEFAULT, 60068 , 112354968, 98);
@@ -125,30 +127,25 @@
       INSERT INTO grades (id, crn, RIN, grade)
       VALUES (DEFAULT, 61121 , 661996025, 89);
 
-      click on websyslab7
+      -Click on websyslab7
 
-      click sql
+      -Click SQL
+     
+     -Commands to list out data:
 
-      order by RIN: SELECT * FROM students ORDER BY RIN;
+      Order by RIN: SELECT * FROM students ORDER BY RIN;
 
-      order by name: SELECT * FROM students ORDER BY name;
+      Order by name: SELECT * FROM students ORDER BY name;
 
-      order by lastname: SELECT * FROM students ORDER BY lastname;
+      Order by lastname: SELECT * FROM students ORDER BY lastname;
 
-      order by RSCID: SELECT * FROM students ORDER BY RCSID;
+      Order by RSCID: SELECT * FROM students ORDER BY RCSID;
 
-      order by R: SELECT * FROM students ORDER BY RIN;
+      Order by R: SELECT * FROM students ORDER BY RIN;
 
+      Get RIN/First name/Last name/Address where grade over 90 run: SELECT DISTINCT students.RIN, students.name, students.lastname, students.street, students.city, students.state, students.zip FROM students, grades WHERE grades.grade > 90;
 
-      To get RIN/First name/Last name/Address where grade over 90 run:
-
-      SELECT DISTINCT students.RIN, students.name, students.lastname, students.street, students.city, students.state, students.zip FROM students, grades WHERE grades.grade > 90;
-
-
-
-      To get average grade by course crn:
-
-      select crn, avg(grade) from grades group by crn;
+      To get average grade by course crn: select crn, avg(grade) from grades group by crn;
 
 
 
