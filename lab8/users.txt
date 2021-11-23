@@ -1,0 +1,15 @@
+===Database login
+
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|username|varchar(255)|No|
+|password|varchar(255)|No|
+|is_admin|int(1)|No|
+== Dumping data for table users
+
+|2|Tyler|AMC|1
+|3|Divya|Test|0
