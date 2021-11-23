@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/JavaScript" src="websyst.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <title>ITWS Web Systems</title>
+</head>
+<body>
+  <h2>ITWS Lectures and Labs</h2>
+    <script>
+        for (let i = 0; i < data['Websys_course']['Lectures'].length; i++) {
+                document.body.innerHTML = document.body.innerHTML + '<button class="collapsible">' + data['Websys_course']['Lectures'][i].Lecture + '</button>';
+                document.body.innerHTML = document.body.innerHTML + '<div class="content">';
+                document.body.innerHTML = document.body.innerHTML + '<ul>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Lectures'][i].Title + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Lectures'][i].Description + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Lectures'][i].LinktoSlideshow + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '</ul>';
+                document.body.innerHTML = document.body.innerHTML + '</div>';
+                //document.getElementById("test").innerHTML = data['Websys_course']['Lectures'][i].Title;
+            }
+            for (let i = 0; i < data['Websys_course']['Labs'].length; i++) {
+                document.body.innerHTML = document.body.innerHTML + '<button class="collapsible">' + data['Websys_course']['Lectures'][i].Lecture + '</button>';
+                document.body.innerHTML = document.body.innerHTML + '<div class="content">';
+                document.body.innerHTML = document.body.innerHTML + '<ul>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Labs'][i].Title + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Labs'][i].Description + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '<li>' + data['Websys_course']['Labs'][i].LinktoInstructions + '</li>';
+                document.body.innerHTML = document.body.innerHTML + '</ul>';
+                document.body.innerHTML = document.body.innerHTML + '</div>';
+                //document.getElementById("test").innerHTML = data['Websys_course']['Lectures'][i].Title;
+            }
+    </script>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+</body>
+<form action="logout.php" method="get">
+    <input type="submit" value="Logout">
+</form>
+</html>
+
+<!--MAKE IT SO THAT THE FOR LOOP PRINTS HTML THAT MAKES THE TITLE TEXT A LINK-->
+<!--MAKE IT SO THAT WHEN YOU CLICK THAT LINK IT EXPANDS AND PRINTS THE HIDDEN OTHER ELEMENTS-->
+<!--BOOTSTRAP MIGHT HELP IF IT HAS CONCELAED DIVS OR SOME SHIT-->
+<!--THINK ABOUT WHAT YOU ALMOST DID FOR THE ITWS LAB WEBSITE WITH THE BLUE DROP DOWN DIVS-->
