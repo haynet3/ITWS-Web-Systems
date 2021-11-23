@@ -15,9 +15,7 @@
 
 ***Struggles***
 
-    -Not enough time to implement button that displays the table (simple addition just didn't arrive at it in time-would just need to make buttons where
-     Their action is to call on the specified PHP file that has the proper call for however they want the table ordered. Instead just simply listed out
-     Three different tables that each follow what the buttons would've asked for.
+    -Almost not enough time to implement button that displays the table but ended up getting it
      -Was unusually difficult getting database to connect, might be due to an issue with my AMP stack but it was resolved
      
      
