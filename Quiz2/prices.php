@@ -81,6 +81,8 @@ input[type=submit] {
 }
 h1,h2 {
     text-align:center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+
 }
 }
 </style>
