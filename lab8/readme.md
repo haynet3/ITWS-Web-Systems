@@ -23,3 +23,4 @@
         -Logout Button at the very bottom of the main site page
         -HTML Webpage listing all Lectures and Labs from ITWS Websystems printed via a JSON File
         -Lacks database archiving due to time constraint and file corruption.
+        -Textfile dump of Database
