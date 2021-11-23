@@ -14,3 +14,12 @@
          -Although I unfortunately couldn't get certain aspects of the lab to function as intended-I will use this as a learning experience to assist with the
           Development of the final project as certain concepts from the lab will be vital functions of that project
           
+
+
+***Features***
+
+        -Login PHP page (Username: Tyler//Password: AMC) That redirects to main site when sucessful
+        -PHP Uses PDO instead of mySQLI
+        -Logout Button at the very bottom of the main site page
+        -HTML Webpage listing all Lectures and Labs from ITWS Websystems printed via a JSON File
+        -Lacks database archiving due to time constraint and file corruption.
