@@ -79,9 +79,14 @@ input[type=submit] {
   border: 3px solid green;
   padding: 10px;
 }
+h1,h2 {
+    text-align:center;
+}
 }
 </style>
 <body>
+    <h1>ITWS Quiz Part 3<h1>
+        <h2>Tyler Haynes<h2>
     <div class="center">
 <h1>Item Prices<h1>
     <form action="one.php" method="get">
