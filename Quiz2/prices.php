@@ -73,9 +73,16 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
 }
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
 }
 </style>
 <body>
+    <div class="center">
 <h1>Item Prices<h1>
     <form action="one.php" method="get">
   <input type="submit" class="button1" value="All items">
@@ -90,6 +97,7 @@ input[type=submit] {
 <h1>Average Item Prices<h1>
     <form action="three.php" method="get">
   <input type="submit" class="button1" value="Average price">
+</div>
 </form>
     
 
